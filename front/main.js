@@ -68,6 +68,7 @@ function reqNews(news_url) {
   };
   var payloads = {
     'news_url': news_url,
+    'news_doc': document.getElementById('doc').value,
   }
   
   return new Promise((resolve, reject) => {

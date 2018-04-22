@@ -22,7 +22,7 @@ import asyncio
 page rank class
 """
 
-class textRank:
+class textRank:    
     def getNews(self, url):
         self.url = url
         text = requests.get(self.url)

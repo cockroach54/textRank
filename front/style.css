@@ -4,19 +4,18 @@ h1{
 
 .textarea{
     height: 30%;
-    border: 1px solid red;
+    border: 1px solid crimson;
     overflow-y: scroll;
     white-space: pre-wrap;
 }
 
 .short{
     height: 2rem;
+    border: 1px solid blueviolet;  
 }
 
 label{
     vertical-align: top;
-    border: 1px solid blue;
-    
 }
 
 iframe{
@@ -31,4 +30,10 @@ iframe{
 
 #url, #query{
     width: 80%;
+}
+
+#doc{
+    width: 80%;
+    height: 3rem;
+    overflow-y: scroll;
 }

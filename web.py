@@ -74,14 +74,21 @@ def news():
     
     body = json.loads(request.data)
     news_url = body['news_url']
+    news_doc = body['news_doc']
 
-    # # 비동기로 불러오기
-    # # loop = asyncio.get_event_loop()
-    # # loop.run_until_complete(p.getNews(news_url))
-    # # 주피터에서 사용
-    # article = p.getNews(news_url)
-    article = requests.get(news_url)
-    p.parse(article)
+    # 네이버 뉴스 제외하고 url대신 본문으로 보낸경우
+    if news_url is '':
+      print(news_doc)
+      p.article_parsed = news_doc.split('. ')
+      p.title = 'have no title'
+    else:
+      # # 비동기로 불러오기
+      # # loop = asyncio.get_event_loop()
+      # # loop.run_until_complete(p.getNews(news_url))
+      # # 주피터에서 사용
+      # article = p.getNews(news_url)
+      article = requests.get(news_url)
+      p.parse(article)
     # textrank
     p.setGraph()
     p.getSummary()
