@@ -1,0 +1,34 @@
+h1{
+    color: gray;
+}
+
+.textarea{
+    height: 30%;
+    border: 1px solid red;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+}
+
+.short{
+    height: 2rem;
+}
+
+label{
+    vertical-align: top;
+    border: 1px solid blue;
+    
+}
+
+iframe{
+    width: 100%;
+    height: 50%;
+}
+
+.keywords{
+    /* color: red; */
+    font-weight: bold;
+}
+
+#url, #query{
+    width: 80%;
+}

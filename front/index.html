@@ -1,0 +1,24 @@
+<head>
+  <title>TextRank</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <h1>This is for TextRank</h1>
+  <label>url 입력</label><input type="text" id='url'>
+  <button id='summ_news'>summarize news</button>
+  <br/><hr/>
+  <label>질문하기</label><input type="text" id='query'>
+  <button id='query_news'>inquire news</button>
+  <br/><hr/>
+  <p>뉴스 제목</p><div id='news_title' class='textarea short'></div>
+  <p>주요 키워드</p><div id='news_keywords' class='textarea short'></div>
+  <p>질문 답변</p><div id='news_answers' class='textarea'></div>
+  <p>뉴스 본문</p><div id='news_origin' class='textarea'></div>
+  <p>뉴스 요약</p><div id='news_summ' class='textarea'></div>
+  <br/><hr/>
+  <iframe id='iframe' src='http://news.naver.com'></iframe>  
+</body>
+
+<script src="main.js"></script>
